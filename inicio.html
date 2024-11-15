@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cerámicas Chucaw</title>
+    <link rel="stylesheet" href="./estilo/styles.css">
+</head>
+<body>
+    <!-- Encabezado de la página -->
+    <header class="header">
+        <h1>Cerámicas Chucaw</h1>
+        <p>Arte y tradición en cada pieza</p>
+    </header>
+
+ <!-- Menú de navegación -->
+ <div id="navBlock" role="navigation">
+    <nav class="main-nav" data-content-field="navigation">
+        <ul>
+            <li class="page-collection active-link"><a href="/book">acerca de mi</a></li>
+            <li class="page-collection"><a href="/about">ceramicas</a></li>
+            <li class="products-collection"><a href="/shop">herramientas</a></li>
+            <li class="gallery-collection"><a href="/gallery">galeria</a></li>
+            <li class="page-collection"><a href="/contact">contacto</a></li>
+        </ul>
+        <a href="carrito.html" id="cart">
+            <img src="./imagenes/shopping-cart.png" alt="Carrito">
+            <span id="cuenta-carrito">0</span>
+        </a>
+
+       <!-- <select id="mobileSelect" name="mobileSelect">
+            <option class="mobile-select-label" value="">Navigation</option>
+            <option class="page-collection" value="/book" selected="selected">book</option>
+            <option class="page-collection" value="/about">about</option>
+            <option class="products-collection" value="/shop">shop</option>
+            <option class="gallery-collection" value="/gallery">galeria</option>
+            <option class="page-collection" value="/contact">contacto</option>
+        </select>-->
+    </nav>
+</div>
+
+    <!-- Sección de productos destacados -->
+    <section class="products">
+        <h2>Piezas Destacadas</h2>
+        <div class="product-list">
+            <div class="product-item">
+                <img src="./imagenes/WhatsApp Image 2024-11-09 at 12.55.01.jpeg" alt="Cerámica 1">
+                <h3>Jarrón Tradicional</h3>
+                <p>Este jarrón destaca por sus detalles únicos y su proceso artesanal.</p>
+                <button onclick="comprar('Jarrón Tradicional')">Comprar</button>
+            </div>
+            <div class="product-item">
+                <img src="./imagenes/WhatsApp Image 2024-11-09 at 12.55.00 (3).jpeg" alt="Cerámica 2">
+                <h3>Tazón Decorativo</h3>
+                <p>Perfecto para decorar cualquier espacio con un toque tradicional.</p>
+                <button onclick="comprar('Tazón Decorativo')">Comprar</button>
+            </div>
+            <!-- Agregar más productos según sea necesario -->
+        </div>
+    </section>
+
+    <!-- Sección sobre el creador/artesano -->
+    <section class="about">
+        <h2>Sobre el Artesano</h2>
+        <p>En Cerámicas Chucaw, cada pieza es creada con dedicación y respeto por las técnicas ancestrales. Nos enorgullece traer el arte de la cerámica tradicional a tu hogar.</p>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section class="contact">
+        <h2>Contacto</h2>
+        <p>Síguenos en nuestras redes sociales o contáctanos para pedidos personalizados.</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/ceramicaschucaw/" target="_blank">Instagram</a>
+            <a href="https://www.facebook.com/ceramicaschucaw" target="_blank">Facebook</a>
+            <a href="#" target="_blank">Correo</a>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <p>&copy; 2024 Cerámicas Chucaw. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- JavaScript para funciones -->
+    <script>
+        function comprar(producto) {
+            alert('Has seleccionado el ' + producto + ' para comprar.');
+        }
+    </script>
+</body>
+</html>
